@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://cdn.prod.website-files.com/64f989999025f3e47402a969/65510000927d21cb6bed21e4_AI-in-Healthcare.jpeg'); /* Add your image path here */
+    background-size: 125%; /* Scale image to cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-attachment: fixed; /* Fix the background image during scrolling */
+    background-color: #629fd8; /* Fallback color if the image fails to load */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height to ensure full viewport height */
+    margin: 0;
+    position: relative; /* Ensure the image is positioned relative to the body */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.25); /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px;
+    position: relative; /* Ensure the container is positioned above the background */
+}
+
+h1 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14pt;
+    color: #000000;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input {
+    background: rgba(255, 255, 255, 0);
+    color: darkgreen;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.error, .result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.error {
+    color: #d9534f;
+}
+
+.result {
+    color: #333;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}

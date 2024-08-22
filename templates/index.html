@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 style="background-color: lightblue">DIABETES PREDICTION</h1>
+        <form action="/predict" method="post">
+            <!-- Form fields -->
+            <label for="pregnancies">NUMBER OF PREGNANCIES:</label>
+            <input type="number" id="pregnancies" name="pregnancies" min="0" step="1" required>
+
+            <label for="glucose">GLUCOSE LEVEL:</label>
+            <input type="number" id="glucose" name="glucose" min="0" step="1" required>
+
+            <label for="blood_pressure">BLOOD PRESSURE:</label>
+            <input type="number" id="blood_pressure" name="blood_pressure" min="0" step="1" required>
+
+            <label for="skin_thickness">SKIN THICKNESS:</label>
+            <input type="number" id="skin_thickness" name="skin_thickness" min="0" step="1" required>
+
+            <label for="insulin">INSULIN LEVEL:</label>
+            <input type="number" id="insulin" name="insulin" min="0" step="1" required>
+
+            <label for="bmi">BMI:</label>
+            <input type="number" id="bmi" name="bmi" min="0" step="0.1" required>
+
+            <label for="pedigree">DIABETES PEDIGREE FUNCTION:</label>
+            <input type="number" id="pedigree" name="pedigree" min="0" step="0.001" required>
+
+            <label for="age">AGE:</label>
+            <input type="number" id="age" name="age" min="0" step="1" required>
+
+            <input type="submit" value="PREDICT">
+        </form>
+    </div>
+</body>
+</html>
